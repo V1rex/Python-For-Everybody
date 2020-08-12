@@ -4,7 +4,7 @@ try:
     score = float(input('Please type in your score: '))
 except :
     print("Try again, you did not type a number")
-    exit()
+    exit() # the program exit if the input is not a float
 
 if score >= 0.0 and score <= 1.0 :
    if score >= 0.9 :
