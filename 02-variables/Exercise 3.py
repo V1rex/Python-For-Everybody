@@ -1,8 +1,21 @@
 
-numberOfHours = int(input('Enter Hours:'))
+numberOfHours = input('Enter Hours:')
 
-rateNumber = int(input('Enter Rate:'))
+rateNumber = input('Enter Rate:')
 
-pay = numberOfHours * rateNumber
+pay = float(numberOfHours) * (rateNumber)
 
 print('Pay : ', pay , '$')
+
+
+"""Another alternative solution for this exercice :
+
+    numberOfHours = float(input('Enter Hours:'))
+
+    rateNumber = float(input('Enter Rate:'))
+
+    pay = numberOfHours * rateNumber
+
+    print('Pay : ', pay , '$')
+
+"""
