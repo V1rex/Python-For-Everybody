@@ -1,7 +1,7 @@
 
 count = 0
 total = 0
-average = 0
+average = 0.0
 
 while True :
     inputUsr = input('Enter a number: ')
