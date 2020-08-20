@@ -20,10 +20,20 @@ print(cmd)
 
 mysock.send(cmd)
 
+count = 0
 while True:
     data = mysock.recv(512)
     if len(data) < 1:
         break
 
-    print(data.decode())
+    contentPage = data.decode().strip()
+
+    for char in contentPage :
+        if count <= 3000 :
+            print(char, end='')
+        count = count + 1
+
+
+
+print("\nThe number of characters is : " + str(count))
 mysock.close()
